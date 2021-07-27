@@ -1,8 +1,13 @@
 <?php
 
-/*
- * You can place your custom package configuration in here.
- */
 return [
-
+    'twilio' => [
+        'default' => 'twilio',
+        'connections' => [
+            'twilio' => [
+                'sid' => env('TWILIO_SID', ''),
+                'token' => env('TWILIO_TOKEN', ''),
+            ]
+        ]
+    ]
 ];
